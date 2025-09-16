@@ -9,14 +9,11 @@ import reactor.core.publisher.Mono;
 @RestController
 public class ChatController {
 
-
     private final ChatService chatService;
-
 
     public ChatController(ChatService chatService) {
         this.chatService = chatService;
     }
-
 
     @GetMapping("/ask")
     public Mono<String> ask(@RequestParam("q") String q) {

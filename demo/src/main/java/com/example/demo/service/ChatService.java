@@ -11,9 +11,7 @@ import reactor.core.scheduler.Schedulers;
 @Service
 public class ChatService {
 
-
     private final ChatModel chatModel;
-
 
     @Autowired
     public ChatService(ChatModel chatModel) {
@@ -22,14 +20,13 @@ public class ChatService {
 
     /**
      * @param userMessage
-     * @return
-     * Ollama call is blocking, so use mono and then boundedElastic scheduler to offload it
+     * @return Ollama call is blocking, so use mono and then boundedElastic scheduler to offload it
      */
     public Mono<String> ask(String userMessage) {
         return Mono.fromCallable(() -> {
                     Prompt prompt = new Prompt(userMessage);
                     ChatResponse response = chatModel.call(prompt);
-                    return response.getResult().getOutput().getText();
+                    return response.getResult().getOutput().getContent();
                 })
                 .subscribeOn(Schedulers.boundedElastic())
                 .onErrorResume(ex -> Mono.just("Error: " + ex.getMessage()));
