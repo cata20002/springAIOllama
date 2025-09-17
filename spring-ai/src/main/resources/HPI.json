@@ -1,0 +1,296 @@
+{
+    "HPI scales":
+    {
+        "Energy and drive": {
+            "description" : "The ability to make progress/move forward",
+            "scales" : [
+                {
+                    "scale": "Adjustment",
+                    "score": 90,
+                    "level": "high",
+                    "description": "This scale measures how confident, accepting, and stable a person appears under pressure.",
+                    "positive-implications": "People with high scores adapt quickly to stressful environments or heavy workloads. They remain calm under pressure, do not overreact, and behave in a stable and confident manner. Others appreciate their resilience in difficult situations.",
+                    "negative-implications": "Such individuals may be less empathetic to the stress of others and tend to overlook their burdens. They take negative feedback less seriously and ignore mistakes or overestimate their contributions.",
+                    "subscales": [
+                    {
+                        "subscale": "Empathy",
+                        "score": 4,
+                        "description": "very high -> Empathetic toward others' weaknesses"
+                    },
+                    {
+                        "subscale": "Not Anxious",
+                        "score": 1,
+                        "description": "low -> Anxious or tense"
+                    },
+                    {
+                        "subscale": "No Guilt",
+                        "score": 4,
+                        "description": "very high -> Does not dwell on mistakes or regret them"
+                    },
+                    {
+                        "subscale": "Calmness",
+                        "score": 2,
+                        "description": "balanced -> Between \"Sometimes becomes emotional\" and \"Is calm and composed\""
+                    },
+                    {
+                        "subscale": "Even tempered",
+                        "score": 2,
+                        "description": "balanced -> Between \"Mood swings or moodiness\" and \"Even, stable mood\""
+                    },
+                    {
+                        "subscale": "No Complaints",
+                        "score": 4,
+                        "description": "very high -> Rarely complain"
+                    },
+                    {
+                        "subscale": "Trusting",
+                        "score": 4,
+                        "description": "very high -> Trusts others and does not suspect malicious intentions"
+                    },
+                    {
+                        "subscale": "Trusting",
+                        "score": 4,
+                        "description": "very high -> Positive attitude toward authority figures"
+                    }
+                    ]
+                },
+                {
+                    "scale": "Ambition",
+                    "score": 59,
+                    "level": "medium",
+                    "description": "This scale measures how self-confident, leadership-oriented, and competitive a person appears to be.",
+                    "positive-implications": "People with average scores are perceived as moderately ambitious, hard-working, and good team players. They take on leadership roles when necessary and support team goals without being overly focused on status or power.",
+                    "negative-implications": "They may be perceived as indifferent or lacking in strategy, which can raise doubts about their leadership potential. Their reluctance to seek out challenges may make them less effective in highly dynamic environments.",
+                    "subscales": [
+                    {
+                        "subscale": "Competitive",
+                        "score": 2,
+                        "description": "balanced -> Between \"Relaxed and without competitive drive\" and \"Enjoys competition and works hard for success\""
+                    },
+                    {
+                        "subscale": "Self-confident",
+                        "score": 4,
+                        "description": "very high -> Self-confident and confident in his own capabilities"
+                    },
+                    {
+                        "subscale": "Accomplishment",
+                        "score": 4,
+                        "description": "very high -> Satisfied with own achievements"
+                    },
+                    {
+                        "subscale": "Leadership",
+                        "score": 1,
+                        "description": "low -> Hesitates to take on leadership roles"
+                    },
+                    {
+                        "subscale": "Identity",
+                        "score": 4,
+                        "description": "very high -> No description provided"
+                    },
+                    {
+                        "subscale": "No Social Anxiety",
+                        "score": 4,
+                        "description": "very high -> Confident and socially competent"
+                    }
+                    ]
+                }
+            ]
+        },
+        "Relationships and communication": {
+            "description" : "The ability to get along with others",
+            "scales" : [
+                {
+                    "scale": "Sociability",
+                    "score": 41,
+                    "level": "medium",
+                    "description": "This scale measures how much a person needs or enjoys social interaction.",
+                    "positive-implications": "Individuals with average scores are neither highly extroverted nor socially reserved. They are friendly, approachable, and willing to listen without necessarily seeking attention. Customers and colleagues find them pleasant to talk to.",
+                    "negative-implications": "They may not actively seek recognition and could therefore appear unengaged. They sometimes keep their ideas to themselves so as not to draw too much attention to themselves, which could prevent them from expressing their opinions effectively.",
+                    "subscales": [
+                    {
+                        "subscale": "Likes Parties",
+                        "score": 4,
+                        "description": "very high -> Likes Parties"
+                    },
+                    {
+                        "subscale": "Likes Crowds",
+                        "score": 4,
+                        "description": "very high -> Likes large crowds"
+                    },
+                    {
+                        "subscale": "Experience Seeking",
+                        "score": 1,
+                        "description": "low -> Not very adventurous, prefers little variety"
+                    },
+                    {
+                        "subscale": "Exhibitionistic",
+                        "score": 1,
+                        "description": "low -> Avoids attention"
+                    },
+                    {
+                        "subscale": "Entertaining",
+                        "score": 2,
+                        "description": "balanced -> Between \"Not particularly entertaining\" and \"Charming, amusing, good sense of humor\""
+                    }
+                    ]
+                },
+                {
+                    "scale": "Interpersonal Sensitivity",
+                    "score": 100,
+                    "level": "high",
+                    "description": "This scale measures how empathetic, tactful, and perceptive a person appears to be in interpersonal relationships.",
+                    "positive-implications": "People with high scores are perceived as diplomatic, trustworthy, friendly, warm, and caring. They are attentive, cooperative, and promote teamwork and collaboration. These individuals easily build trust and win the goodwill of their colleagues.",
+                    "negative-implications": "Such individuals may tend to avoid confrontation, which can lead to problems not being addressed in a timely manner. They often focus on getting along well with others and may give the impression of bias or favoritism. Their yielding nature may be exploited by others.",
+                    "subscales": [
+                    {
+                        "subscale": "Easy to Live With",
+                        "score": 4,
+                        "description": "very high -> Perceived as tolerant & sociable"
+                    },
+                    {
+                        "subscale": "Sensitive",
+                        "score": 4,
+                        "description": "very high -> Tactful, friendly, and considerate"
+                    },
+                    {
+                        "subscale": "Caring",
+                        "score": 4,
+                        "description": "very high -> Empathetic, sensitive, and understanding"
+                    },
+                    {
+                        "subscale": "Likes People",
+                        "score": 4,
+                        "description": "very high -> Enjoys interaction and the company of others"
+                    },
+                    {
+                        "subscale": "No Hostility",
+                        "score": 4,
+                        "description": "very high -> Largely accepts the mistakes of others"
+                    }
+                    ]
+                }
+            ]
+        },
+        "Problem solving": {
+            "description" : "Ability to achieve significance/create meaning",
+            "scales" : [
+                {
+                    "scale": "Prudence",
+                    "score": 94,
+                    "level": "high",
+                    "description": "This scale measures how conscientious, rule-abiding, and organized a person appears to be.",
+                    "positive-implications": "People with high scores are perceived as neat, reliable, methodical, organized, and responsible. They set high standards for themselves and others, are detail-oriented, and strictly follow the rules and procedures of the organization. They carefully gather all necessary information before making decisions.",
+                    "negative-implications": "Such individuals may be perceived as overly controlling and have difficulty coping with change. They may tend to micromanage details and be reluctant to delegate tasks. They may lose sight of the big picture and appear rigid or inflexible.",
+                    "subscales": [
+                    {
+                        "subscale": "Moralistic",
+                        "score": 4,
+                        "description": "very high -> Strictly adheres to conventional values"
+                    },
+                    {
+                        "subscale": "Mastery",
+                        "score": 4,
+                        "description": "very high -> Hardworking & performance-oriented"
+                    },
+                    {
+                        "subscale": "Virtuous",
+                        "score": 3,
+                        "description": "high -> Conscientious, precise, and perfectionist"
+                    },
+                    {
+                        "subscale": "Not Autonomous",
+                        "score": 1,
+                        "description": "low -> Independent & resistant to feedback"
+                    },
+                    {
+                        "subscale": "Not Spontaneous",
+                        "score": 4,
+                        "description": "very high -> Plans ahead; prefers predictability"
+                    },
+                    {
+                        "subscale": "Impulse Control",
+                        "score": 4,
+                        "description": "very high -> Thoughtful & prefers security"
+                    },
+                    {
+                        "subscale": "Avoids Trouble",
+                        "score": 1,
+                        "description": "low -> Willing to take risks; acts like a troublemaker"
+                    }
+                    ]
+                },
+                {
+                    "scale": "Inquisitive",
+                    "score": 10,
+                    "level": "low",
+                    "description": "This scale measures how imaginative and innovative a person appears to be in solving problems.",
+                    "positive-implications": "People with low scores are practical, pragmatic, and process-oriented. They prefer proven approaches to problem solving and feel comfortable with repetitive tasks. They can identify flaws and weaknesses in ideas and often serve as \"devil's advocates.\"",
+                    "negative-implications": "Such individuals may be hesitant to embrace new ideas and experiences, which makes them uncertain in ambiguous situations. They tend to focus on details and routine matters and avoid considering creative approaches or suggestions from colleagues.",
+                    "subscales": [
+                    {
+                        "subscale": "Science Ability",
+                        "score": 1,
+                        "description": "unknown -> ?"
+                    },
+                    {
+                        "subscale": "Curiosity",
+                        "score": 1,
+                        "description": "low -> Little curiosity about the world"
+                    },
+                    {
+                        "subscale": "Thrill Seeking",
+                        "score": 1,
+                        "description": "low -> Not interested in stimulation or excitement"
+                    },
+                    {
+                        "subscale": "Intellectual Games",
+                        "score": 3,
+                        "description": "high -> Interested in puzzles & brain teasers"
+                    },
+                    {
+                        "subscale": "Generates Ideas",
+                        "score": 1,
+                        "description": "low -> Does not see themselves as a source of ideas"
+                    },
+                    {
+                        "subscale": "Culture",
+                        "score": 2,
+                        "description": "balanced -> Between \"Narrow range of interests, not very open to new things\" and \"Has a variety of activities and interests\""
+                    }
+                    ]
+                },
+                {
+                    "scale": "Learning Approach",
+                    "score": 19,
+                    "level": "low",
+                    "description": "This scale measures how much a person enjoys learning and how important it is to them to stay up to date in professional and technical areas.",
+                    "positive-implications": "Individuals with low scores prefer hands-on training methods such as mentoring or \"learning by doing\" to traditional educational paths. They focus on applying skills rather than learning new theories or abstract concepts.",
+                    "negative-implications": "Such individuals may find traditional education tedious and show little interest in developing their employees' skills. They may ignore opportunities for further training and fail to set clear goals for themselves or others.",
+                    "subscales": [
+                    {
+                        "subscale": "Education",
+                        "score": 3,
+                        "description": "high -> Positive attitude toward education"
+                    },
+                    {
+                        "subscale": "Math Ability",
+                        "score": 0,
+                        "description": "low -> Has problems with numbers"
+                    },
+                    {
+                        "subscale": "Good Memory",
+                        "score": 3,
+                        "description": "high -> Can remember things easily"
+                    },
+                    {
+                        "subscale": "Reading",
+                        "score": 2,
+                        "description": "balanced -> Between \"Does not stay up to date\" and \"Stays informed; enjoys reading\""
+                    }
+                    ]
+                }
+            ]
+        }
+        
+    }
+}
