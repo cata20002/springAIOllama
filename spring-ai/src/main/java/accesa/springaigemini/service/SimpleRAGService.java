@@ -14,8 +14,10 @@ import dev.langchain4j.data.segment.TextSegment;
 import dev.langchain4j.model.embedding.EmbeddingModel;
 import dev.langchain4j.model.embedding.onnx.allminilml6v2.AllMiniLmL6V2EmbeddingModel;
 import dev.langchain4j.store.embedding.EmbeddingMatch;
+import dev.langchain4j.store.embedding.EmbeddingSearchRequest;
 import dev.langchain4j.store.embedding.EmbeddingStore;
 import dev.langchain4j.store.embedding.inmemory.InMemoryEmbeddingStore;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -32,6 +34,11 @@ public class SimpleRAGService {
     private final EmbeddingStore<TextSegment> embeddingStore;
     private final DocumentSplitter documentSplitter;
     private final DocumentParser pdfParser;
+    @Value("${gcp.project-id}")
+    private String projectId;
+
+    @Value("${gcp.location}")
+    private String location;
 
     public SimpleRAGService() {
         this.embeddingModel = new AllMiniLmL6V2EmbeddingModel();
@@ -63,8 +70,11 @@ public class SimpleRAGService {
     }
 
     public List<String> findRelevantDocuments(String query) {
-        Embedding queryEmbedding = embeddingModel.embed(query).content();
-        List<EmbeddingMatch<TextSegment>> matches = embeddingStore.findRelevant(queryEmbedding, 5);
+        List<EmbeddingMatch<TextSegment>> matches = embeddingStore.search(EmbeddingSearchRequest.builder()
+                        .queryEmbedding(embeddingModel.embed(query).content())
+                        .maxResults(5)
+                        .build())
+                .matches();
 
         return matches.stream()
                 .map(match -> match.embedded().text())
@@ -82,7 +92,7 @@ public class SimpleRAGService {
                 query
         );
 
-        try (VertexAI vertexAI = new VertexAI("bubbly-anvil-444010-g3", "us-central1")) {
+        try (VertexAI vertexAI = new VertexAI(projectId, location)) {
             GenerationConfig config = GenerationConfig.newBuilder()
                     .setMaxOutputTokens(8192)
                     .setTemperature(0.7F)
@@ -96,16 +106,8 @@ public class SimpleRAGService {
                     .build();
 
             GenerateContentResponse response = model.generateContent(augmentedPrompt);
-            return response.getCandidates(0).getContent().toString();
+            return response.getCandidates(0).getContent().getParts(0).getText();
         }
-    }
-
-    public List<String> getIndexedDocuments() {
-        return embeddingStore.findRelevant(embeddingModel.embed("").content(), 100)
-                .stream()
-                .map(match -> match.embedded().metadata().get("filename"))
-                .distinct()
-                .collect(Collectors.toList());
     }
 
     public void indexDocuments(List<MultipartFile> files) throws IOException {
